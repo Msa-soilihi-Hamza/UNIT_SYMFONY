@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+            <h1>{{ message }}</h1>
+            <p class="lead mt-4">
+                Cette page a été créée avec Symfony 6.2.14. Vous pouvez maintenant commencer à développer votre application.
+            </p>
+            <div class="mt-4">
+                <a href="https://symfony.com/doc" class="btn btn-primary me-2" target="_blank">Documentation</a>
+                <a href="{{ path('app_home') }}" class="btn btn-secondary">Accueil</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
